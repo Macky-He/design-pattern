@@ -12,7 +12,5 @@ public class App {
         Chart chart = null;
         chart = ChartFactory.getChart("pie");
         chart.display();
-
-        
     }
 }

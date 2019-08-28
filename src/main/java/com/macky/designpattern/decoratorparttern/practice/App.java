@@ -9,9 +9,6 @@ package com.macky.designpattern.decoratorparttern.practice;
 public class App {
 
     public static void main(String[] args) {
-        Encrypt encrypt,encrypt1,encrypt2;
-        encrypt = new Base64();
-        encrypt1 = new DesDecorator(encrypt);
-        encrypt1.encrypt();
+        new DesDecorator(new Base64()).encrypt();
     }
 }
