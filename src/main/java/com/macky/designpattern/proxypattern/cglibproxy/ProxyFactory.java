@@ -29,6 +29,8 @@ public class ProxyFactory implements MethodInterceptor {
         //4.创建子类（代理对象）
         return enhancer.create();
     }
+
+    @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("开始事务...");
         //执行目标对象的方法
