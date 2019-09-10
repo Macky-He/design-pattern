@@ -8,7 +8,7 @@ package com.macky.designpattern.mediatorpattern;
  */
 public class SubConcreteMediator extends ConcreteMediator {
     //增加对Label对象的引用
-    public Label label;
+    public Label label = new Label();
 
     @Override
     public void componentChanged(Component component) {
